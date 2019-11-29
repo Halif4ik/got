@@ -1,8 +1,9 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Oxygen', sans-serif;
-}
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    }
 header {
     display: flex;
     top: 15px;
@@ -13,8 +14,10 @@ header {
 }
 
 .logo__letter {
-    color: black; /* Красный цвет символов */
-    position: relative; /* Относительное позиционирование */
+    font-family: "font-game";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/game-thrones.ttf") format("truetype");
 
 }
 .nav{
@@ -25,8 +28,8 @@ header {
     justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
-
 }
+
 .nav__link{
     margin-left: 5%;
     text-decoration: none;
