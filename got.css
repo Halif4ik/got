@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+header {
+    display: flex;
+    top: 15px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #1abc9c;
+    margin:  3% 8%;
+}
+
+.logo__letter {
+    color: black; /* Красный цвет символов */
+    position: relative; /* Относительное позиционирование */
+
+}
+.nav{
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.nav__link{
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s linear ;
+}
+/*      */
+.nav__link:hover{
+    color: red;
+}
+
+.our_awesome{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    background: #1abc9c;
+}
+.mobile{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.subscribe_button{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+}
+.subscribe h2{
+    margin-bottom: 30px;
+}
+.our_awesome h2{
+    color: white;
+}
+.button{
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border:white solid 2px;
+    border-radius: 5px;
+    background: #1abc9c;
+}
+.button:hover{
+    background: #2ecc71;
+}
+/* about us*/
+.about{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Oxygen', sans-serif;
+}
+.about_item{
+    /*border: black solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    width: 30%;
+    text-align: center;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    background-color: #1abc9c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+
+    }
+.about .icon .fas, .fab{
+    margin-top: 25px;
+}
+/* contact us */
+
+.about h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* override style class our_awesome */
+.contact{
+    flex-direction: column;
+}
+form{
+    text-align: center;
+    width: 50vw;
+    margin: 3px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+form input, textarea {
+    width: 100%;
+    margin: 3px;
+    }
+
+.button_long{
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 30px auto;
+
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    text-align: center;
+    border: black 1px solid;
+    padding: 4px;
+    width: 100%;
+
+}
+
+
+
+

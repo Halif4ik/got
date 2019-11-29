@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta charset="utf-8">-->
+    <title>Our awesome</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy
+    |Oxygen:300,400"
+          rel="stylesheet">
+    <link rel="stylesheet" href="sPart3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+<header>
+    <div class="logo"><span class="logo__letter">N</span>++
+    </div>
+    <div class="nav">
+        <a class="nav__link" href="#">PRODUCTS</a>
+        <a class="nav__link" href="#">ABOUT US</a>
+        <a class="nav__link" href="#">CONTACT US</a>
+    </div>
+</header>
+
+<section class="our_awesome">
+    <div class="mobile">
+        <img src="image/phone.png" alt="telephone">
+    </div>
+
+    <div class="subscribe_button">
+        <div class="subscribe">
+            <h2>Our awersome app is ready to use!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur assumenda
+                at aut blanditiis consequatur consequuntur corporis culpa distinctio doloremque eaque earum
+                eum expedita facilis fuga, id incidunt ipsa iste laborum magni maxime minus natus.</p></div>
+
+        <button type="button" class="button">By now!</button>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about_item">
+        <div class="icon">
+            <i class="fas fa-code"></i>
+        </div>
+        <h2> Web development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deserunt, illo ipsam iusto maxime saepe
+            sit. Accusamus alias asperiores assumenda dicta dolorum explicabo facere, ipsam iste itaque odio saepe
+            vero.</p>
+    </div>
+    <div class="about_item">
+        <div class="icon">
+            <i class="fab fa-android"></i>
+        </div>
+        <h2> Mobile development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deserunt, illo ipsam iusto maxime saepe
+            sit. Accusamus alias asperiores assumenda dicta dolorum explicabo facere, ipsam iste itaque odio saepe
+            vero.</p></div>
+    <div class="about_item">
+        <div class="icon">
+            <i class="fas fa-cloud"></i>
+        </div>
+        <h2> Hightload</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deserunt, illo ipsam iusto maxime saepe
+            sit. Accusamus alias asperiores assumenda dicta dolorum explicabo facere, ipsam iste itaque odio saepe
+            vero.</p></div>
+</section>
+
+<section class="our_awesome contact">
+    <h2> Contact us!</h2>
+    <!--    begin forms-->
+    <form>
+        <input type="text" placeholder="Type here your name, place" pattern="^\w">
+        <input type="email" placeholder="Type here your email, place">
+        <input type="tel" placeholder="Type here your phone number, place">
+        <input type="password" name="pass" id="password" placeholder="Type here your password, please">
+
+        <textarea placeholder="Ask you question" class="inputs" rows="5"></textarea>
+        <button type="submit" class="button_long">Send email!</button>
+        <!--        add all inputs--><br>
+    </form>
+
+    <form>
+        <label for="box">Would you like site?</label>
+        <input type="number" name="amount" id="box" placeholder="How many site would you like?"
+               pattern="^[0-9]+">
+
+
+        <div class="box">
+            <label for="doneness">How do you want your quickly</label>
+                        <span>Slow</span>
+            <input type="range" name="doneness" id="doneness" value="3" min="1" max="10">
+            <span>Well-Done</span>
+        </div>
+
+        <div class="box">
+            <span>What would you like?</span>
+            <input type="checkbox" id="web" value="web">
+            <label for="web">Web</label>
+            <input type="checkbox" id="mobile" value="mobile">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="hightload" value="hightload">
+            <label for="hightload">Hightload</label>
+        </div>
+
+
+        <div class="box">
+            <span>Would you like begin?</span>
+            <br>
+            <input type="radio" id="yes" name="start" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="start" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <div class="box">
+            <span>Would you like flow?</span>
+            <br>
+            <select id=flow name=flow>
+                <option value="web">web</option>
+                <option value="mobile">mobile</option>
+                <option value="hightload">hightload</option>
+            </select>
+        </div>
+
+        <label for="city">Ideal city to visit?</label>
+        <input type="text" list="cities" id="city" name="city">
+
+        <datalist id="cities">
+            <option value="New York City"></option>
+            <option value="Tokyo"></option>
+            <option value="Barcelona"></option>
+            <option value="Mexico City"></option>
+            <option value="Melbourne"></option>
+            <option value="Other"></option>
+        </datalist>
+        <!--        thats all inputs-->
+    </form>
+
+</section>
+
+</body>
+</html>
