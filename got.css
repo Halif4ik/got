@@ -4,6 +4,15 @@ html, body {
     font-family: 'EB Garamond', serif;
     font-family: 'Open Sans', sans-serif;
     }
+.Left__colum{
+    width: 50%;
+    height: 100vh;
+    background:
+    url("form/maxresdefault.jpg") center no-repeat
+;
+    -webkit-background-size: cover;
+}
+
 header {
     display: flex;
     top: 15px;
