@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-column">
+
+        </div>
+        <div class="right-column">
+            <h1>GAME OF THRONES</h1>
+            <form action="index.html" id="form-registration">
+                <fieldset>
+                    <label for="auth_email">Enter your email</label>
+                    <input type="email" name="auth_email" id="auth_email" placeholder="arya@westeros.com">
+                    <div id="errorEmail"></div>
+                </fieldset>
+                <fieldset>
+                    <label for="auth_pass" id="label-auth_pass_remember">Choose secure password</label>
+                    <p>Must be at least 8 characters</p>
+                    <input type="password" name="auth_pass" id="auth_pass" placeholder="password">
+                    <div id="errorPass"></div>
+                </fieldset>
+                <fieldset class="form__row--remember">
+                    <label for="auth_remember" id="label-checkbox-auth_remember">Remember me</label>
+                   <input type="checkbox" id="auth_remember" name="auth_remember">
+                </fieldset>
+                <div id="error-email-password">Opps email or password is not correct</div>
+                <button type="button" form="registration" id="registration">Sign Up</button>
+            </form>
+
+            <form action="index.html" id="about-user" class="form-hide">
+                <fieldset>
+                    <hr/><span>You've successfully joined the game.<br>Tell us more about yourself.</span>
+                </fieldset>
+                <fieldset class="form__row--text">
+                    <label for="username" id="label_username">Who are you?</label>
+                    <p>Alpha-numeric username</p>
+                    <input type="text" name="username" id="username" placeholder="arya">
+                    <div id="errorUsername"></div>
+                </fieldset>
+                <fieldset class="form__row--select">
+                    <label for="auth_userHome">Your Great House</label>
+                    <select name="auth_userHome" id="auth_userHome">
+                        <option value="" disabled selected>Select House</option>
+                        <option value="houseLan">Flitwick Manor</option>
+                        <option value="houseLan">Padworth College</option>
+                    </select>
+                    <div id="errorAuthUserHome"></div>
+                </fieldset>
+                <fieldset class="form__row--preferences">
+                    <label for="auth_preferences">Your preferences, hobbies, wishes, etc.</label>
+                    <textarea name="auth_preferences" id="auth_preferences" cols="2" rows="2"
+                              placeholder="I have a long TOKILL list..."></textarea>
+                    <div id="errorAuthPreferences"></div>
+                </fieldset>
+                <button type="button" form="about-user" id="aboutUser">Save</button>
+            </form>
+            <div id="error-username-auth_userHome-auth_preferences" class="form-hide">Opps username or house
+                or preferences userHome is not correct</div>
+            <div id="registered">Now conquer your throne !!!</div>
+        </div>
+
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

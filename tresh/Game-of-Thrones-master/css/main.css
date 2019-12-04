@@ -1,0 +1,223 @@
+body {
+    margin: auto;
+    background-image: url("../img/darknoise.png");
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: "GameOfThrones";
+    src: url("../fonts/game-of-thrones/Game_of_Thrones.ttf");
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "leftImage RightForm";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    min-width: 850px;
+    height: 100vh;
+}
+.left-column {
+    grid-area: leftImage;
+    background-image: url("../img/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.right-column {
+    grid-area: RightForm;
+    margin: auto;
+    color: #d3bb89;
+}
+
+.form__row--remember{
+    display: inline-block;
+}
+
+#label-checkbox-auth_remember {
+    float: right;
+    position: relative;
+    right: 5px;
+    left: 15px;
+    font-size: 20px;
+}
+
+#label-auth_pass_remember {
+    padding-bottom: 0;
+}
+
+#auth_pass {
+    padding-top: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+form {
+    width: 530px;
+}
+
+label {
+    padding-bottom: 15px;
+    font-size: xx-large;
+    display: block;
+}
+
+h1 {
+    font-family: GameOfThrones, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+p {
+    display: inline;
+    padding-bottom: 15px;
+    color: #fef8eb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+}
+
+input, select, textarea {
+    width: 100%;
+    outline: 0;
+    border-width:  0 0 2px;
+    border-color: #d3bb89;
+    background: none;
+    padding-bottom: 15px;
+    font-size: large;
+    color: white;
+}
+
+#error-email-password {
+    display: none;
+    text-align: center;
+
+}
+#error-username-auth_userHome-auth_preferences {
+    text-align: center;
+}
+button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #c19a49;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: larger;
+    width: 92%;
+    margin-left: 15px;
+}
+
+input:active {
+    border-color: red;
+}
+
+
+.invalid { border-color: red; }
+form, #errorEmail, #errorPass, #errorUsername, #errorAuthUserHome, #errorAuthPreferences{
+    font-family: 'EB Garamond', serif;
+}
+#errorEmail, #errorPass, #errorUsername, #errorAuthUserHome, #errorAuthPreferences {
+    color: red;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+input[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #d3bb89;
+    border-radius: 3px;
+    background-color: #d3bb89;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+/*start form 2*/
+select {
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select option {
+    color: white;
+    background-color: #c19a49;
+}
+
+textarea {
+    resize:none;
+}
+
+#label_username{
+    padding-bottom: 0;
+}
+#username {
+    margin-top: 20px;
+}
+
+hr {
+    height: 40px;
+    border: 1px solid #d3bb89;
+}
+hr, span {
+    display: inline-block;
+}
+
+span {
+    margin-left: 15px;
+    position: relative;
+    color: white;
+    bottom: 15px;
+}
+
+/*end form 2*/
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(32, 32, 32, 1) inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.form-hide, #registered{
+    display:none;
+}
+.form-show {
+    display: block;
+}
