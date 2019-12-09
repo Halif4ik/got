@@ -41,7 +41,7 @@ form {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     font-family: 'EB Garamond', serif;
 }
 
@@ -74,8 +74,26 @@ form input {
     margin: 0;
 }
 /*while not work*/
-#rem {
-    background: #d3bb89;
+input[type="checkbox"]{
+    display: none;
+}
+label {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+label::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #c19a49;
+    margin: 20px 10px 0 -20px;
+}
+input[type="checkbox"]:checked + label::before{
+    font-family: sans-serif;
+    content: 'X';
+    text-align: center;
+    color: white;
 }
 
 .button button{
