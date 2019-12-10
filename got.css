@@ -22,7 +22,7 @@ html, body {
     -webkit-background-size: cover;
 }
 
-.enterEmail, .successLogin{
+.enterEmail, .successLogin {
     /*display: none;*/
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ form {
     font-family: 'EB Garamond', serif;
 }
 
-.email, .password, .name, .house{
+.email, .password, .name, .house, .preferences {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,35 +54,40 @@ form {
     border-bottom: #d3bb89 2px solid;
 }
 
-form input {
+form input, textarea, select {
     margin: 17px 0;
     background: #202020;
     border: none;
     color: #fef8eb;
     font-size: 16px;
+    align-items: flex-start;
 }
 
-.enterEmail h2 {
-    font-family: "GameOfThrones";
+.enterEmail h2, .successLogin h2 {
+    font-family: "GameOfThrones",sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 30px;
 }
-.password h4{
+
+.massage h4, .password h4, .name h4 {
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+
 /*while not work*/
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
-label {
+
+.remember label {
     padding-left: 20px;
     margin-bottom: 30px;
 }
-label::before{
+
+.remember label::before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -90,14 +95,16 @@ label::before{
     background-color: #c19a49;
     margin: 20px 10px 0 -20px;
 }
-input[type="checkbox"]:checked + label::before{
+
+.remember input[type="checkbox"]:checked + label::before {
     font-family: sans-serif;
     content: 'X';
     text-align: center;
     color: white;
 }
 
-.button button{
+ button {
+     margin-top: 40px;
     width: 100%;
     height: 35px;
     font-size: 15px;
@@ -107,6 +114,13 @@ input[type="checkbox"]:checked + label::before{
     border: none;
 }
 
-.successLogin{
 
+.massage {
+    height: 40px;
+    margin-top: 150px ;
+    border-left: solid 2px #c19a49;
+}
+.massage h4{
+    font-size: 13px;
+    margin-left: 20px;
 }
