@@ -9,7 +9,7 @@ html, body {
     src: url("./fonts/game-thrones.ttf");
 }
 
-.wraper {
+.wrapper {
     display: flex;
     flex-direction: row;
 }
@@ -39,16 +39,15 @@ form {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     font-family: 'EB Garamond', serif;
 }
 
 .email, .password, .name, .house, .preferences {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 40px;
     border-bottom: #d3bb89 2px solid;
+    margin-top: 40px;
 }
 
 form input, textarea, select {
@@ -63,12 +62,11 @@ form input, textarea, select {
 input:-webkit-autofill {
     -webkit-text-fill-color: #fef8eb !important;
 }
+
 input:-webkit-autofill,
-input:-webkit-autofill:active  {
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #202020 inset !important;
 }
-/*input:-webkit-autofill:hover,*/
-/*input:-webkit-autofill:focus,*/
 
 .enterEmail h2, .successLogin h2 {
     font-family: "GameOfThrones", sans-serif;
@@ -84,21 +82,20 @@ input:-webkit-autofill:active  {
     margin: 0;
 }
 
-/*while not work*/
+/*individual input style*/
 input[type="checkbox"] {
     display: none;
 }
 
 .remember label {
     padding-left: 20px;
-    margin-bottom: 30px;
 }
 
 .remember label::before {
     content: '';
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: #c19a49;
     margin: 20px 10px 0 -20px;
     text-align: center;
@@ -121,14 +118,18 @@ button {
     border: none;
 }
 
-
 .massage {
     height: 40px;
-    margin-top: 150px;
     border-left: solid 2px #c19a49;
 }
 
 .massage h4 {
     font-size: 13px;
     margin-left: 20px;
+}
+textarea {
+    resize: none;
+}
+select {
+    -webkit-appearance: none;
 }
