@@ -68,7 +68,7 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #202020 inset !important;
 }
 
-.enterEmail h2, .successLogin h2 {
+.enterEmail h2 {
     font-family: "GameOfThrones", sans-serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -96,16 +96,19 @@ input[type="checkbox"] {
     display: inline-block;
     width: 20px;
     height: 20px;
+    border-radius: 3px;
     background-color: #c19a49;
     margin: 20px 10px 0 -20px;
     text-align: center;
+    vertical-align: sub;
 }
 
 .remember input[type="checkbox"]:checked + label::before {
-    font-family: sans-serif;
-    content: 'X';
-    color: white;
+    content: '';
+    background-size: 100%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMjI5LjE1MyAyMjkuMTUzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMjkuMTUzIDIyOS4xNTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNOTIuMzU2LDIyMy41NDljNy40MSw3LjUsMjMuOTE0LDUuMDE0LDI1LjY5MS02Ljc3OWMxMS4wNTYtNzMuMjE3LDY2LjM3OC0xMzQuOTg1LDEwOC4yNDMtMTkzLjE4OSAgIEMyMzcuODk4LDcuNDUyLDIxMS4yMDctNy44NywxOTkuNzUsOC4wNjdDMTYxLjQ5Myw2MS4yNDksMTEzLjI3NCwxMTcuMjEsOTQuNDEsMTgxLjc0NCAgIGMtMjEuNTU3LTIyLjAzMS00My4yMDEtNDMuODUzLTY3LjM3OS02My4yMTJjLTE1LjMxMi0xMi4yNjUtMzcuMjE1LDkuMzQzLTIxLjczOCwyMS43MzcgICBDMzYuNzk0LDE2NS41MDEsNjQuMDE3LDE5NC45MjQsOTIuMzU2LDIyMy41NDl6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
 }
+
 
 button {
     margin-top: 40px;
@@ -127,9 +130,11 @@ button {
     font-size: 13px;
     margin-left: 20px;
 }
+
 textarea {
     resize: none;
 }
+
 select {
     -webkit-appearance: none;
 }
