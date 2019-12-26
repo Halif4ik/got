@@ -22,7 +22,7 @@ html, body {
     -webkit-background-size: cover;
 }
 
-.enterEmail, .successLogin {
+.enterEmail {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +75,7 @@ input:-webkit-autofill:active {
     font-size: 30px;
 }
 
-.massage h4, .password h4, .name h4 {
+.massage h4, .password h4, .name h4, .preferences textarea {
     color: white;
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
@@ -96,7 +96,7 @@ input[type="checkbox"] {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #c19a49;
     margin: 20px 10px 0 -20px;
     text-align: center;
@@ -129,6 +129,9 @@ button {
 .massage h4 {
     font-size: 13px;
     margin-left: 20px;
+}
+.preferences textarea{
+    font-size: 14px;
 }
 
 textarea {
