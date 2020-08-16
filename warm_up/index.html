@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>WarmUp Javascript+RegExp</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
-  <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WarmUp Javascript+RegExp</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400"
+          rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 <header>
-  <h2> Warm Up</h2>
+    <h2> Warm Up</h2>
 </header>
 
 
 <section class="page">
-  <!--TASK 1 Sum numbers ends 2,3,7 -->
-  <form class="form">
-    <label class="form_head" for="radio"> 1. Дана форма с двумя числовыми инпутами.
-      Посчитать сумму чисел в промежутке между введеными пользователем (например от 1 до 7),
-      суммируя только числа которые заканчиваются на 2,3, и 7</label>
-    <input class="form_head_input" type="radio" id="radio" >
-    <div class="form_wrapper">
-      <input class="form_input" type="number" id="elem1" value="-100">
-      <input class="form_input" type="number" id="elem2" value="100">
-      <button class="btn" type="button" id="btn1">Calculate</button>
-      <output class="label" id="result1">result</output>
-    </div>
-  </form>
-  <!--TASK 2 Date -->
-  <form class="form">
-    <label class="form_head" for = "radioTask2">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
-      (01:05:20). Ниже наоборот: пользователь вводит время в формате hh:mm:ss,
-      вывести количество секунд.</label>
-    <input class="form_head_input" type="radio" id="radioTask2">
-    <div class="form_wrapper">
-      <input class="form_input" type="number"  id="seconds" placeholder="enter time in second">
-      <button class="btn" type="button" id="btn2_1">Calculate</button>
-      <output class="label" id="hh:mm:ss">result</output>
-      <!--part 2 TASK 2 Date -->
-      <input class="form_input" type="time"  id="timeHhMmSS" value="00:00:00"
-             title="please enter correct hh:mm:ss">
-      <button class="btn" type="button" id="btn2_2">Calculate</button>
-      <output class="label" id="result2_2">result</output>
-    </div>
+    <!--TASK 1 Sum numbers ends 2,3,7 -->
+    <form class="form">
+        <label class="form_head" for="radio"> 1. Дана форма с двумя числовыми инпутами.
+            Посчитать сумму чисел в промежутке между введеными пользователем (например от 1 до 7),
+            суммируя только числа которые заканчиваются на 2,3, и 7</label>
+        <input class="form_head_input" type="radio" id="radio">
+        <div class="form_wrapper">
+            <input class="form_input" type="number" id="elem1" value="-100">
+            <input class="form_input" type="number" id="elem2" value="100">
+            <button class="btn" type="button" id="btn1">Calculate</button>
+            <output class="label" id="result1">result</output>
+        </div>
+    </form>
+    <!--TASK 2 Date -->
+    <form class="form">
+        <label class="form_head" for="radioTask2">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
+            (01:05:20). Ниже наоборот: пользователь вводит время в формате hh:mm:ss,
+            вывести количество секунд.</label>
+        <input class="form_head_input" type="radio" id="radioTask2">
+        <div class="form_wrapper">
+            <input class="form_input" type="number" id="seconds" placeholder="enter time in second">
+            <button class="btn" type="button" id="btn2_1">Calculate</button>
+            <output class="label" id="hh:mm:ss">result</output>
+            <!--part 2 TASK 2 Date -->
+            <input class="form_input" type="time" id="timeHhMmSS" value="00:00:00"
+                   title="please enter correct hh:mm:ss">
+            <button class="btn" type="button" id="btn2_2">Calculate</button>
+            <output class="label" id="result2_2">result</output>
+        </div>
     </form>
     <!--TASK 3 Date -->
     <form class="form">
-      <label class="form_head" for = "radioTask3">3) Даны два input[type=datetime-local]. Вычислить промежуток
-        времени прошедший между датами и вывести пользователю сообщение типа: 2 year(s), 1 month(s), 3 day(s),
-        5 hour(s), 10 minute(s), 15 second(s).</label>
-      <input class="form_head_input" type="radio" id="radioTask3">
-      <div class="form_wrapper">
-        <input class="form_input" type="datetime-local"  id="datetimeStart">
-        <input class="form_input" type="datetime-local"  id="datetimeEnd">
-        <button class="btn" type="button" id="btn3">Calculate</button>
-        <output class="label" id="yearMonth" style="display: none">result</output>
-      </div>
+        <label class="form_head" for="radioTask3">3) Даны два input[type=datetime-local]. Вычислить промежуток
+            времени прошедший между датами и вывести пользователю сообщение типа: 2 year(s), 1 month(s), 3 day(s),
+            5 hour(s), 10 minute(s), 15 second(s).</label>
+        <input class="form_head_input" type="radio" id="radioTask3">
+        <div class="form_wrapper">
+            <input class="form_input" type="datetime-local" id="datetimeStart">
+            <input class="form_input" type="datetime-local" id="datetimeEnd">
+            <button class="btn" type="button" id="btn3">Calculate</button>
+            <output class="label" id="yearMonth" style="display: none">result</output>
+        </div>
     </form>
-  <!--TASK 4 chessBoard -->
-  <form class="form">
-    <label class="form_head" for = "radioTask4">4)Пользователь вводит габариты шахматной доски (в формате
-      ‘8x8’). Вывести (как бы нарисовать) шахматную доску..</label>
-    <input class="form_head_input" type="radio" id="radioTask4">
-    <div class="form_wrapper">
-      <input class="form_input" type="text"  id="parsStr">
-      <button class="btn" type="button" id="btn4">Draw</button>
-          </div>
-  </form>
+
+    <!--TASK 4 chessBoard -->
+    <form class="form">
+        <label class="form_head" for="radioTask4">4)Пользователь вводит габариты шахматной доски (в формате
+            ‘8x8’). Вывести (как бы нарисовать) шахматную доску..</label>
+        <input class="form_head_input" type="radio" id="radioTask4">
+        <div class="form_wrapper">
+            <input class="form_input" type="text" id="parsStr">
+            <button class="btn" type="button" id="btn4">Draw</button>
+            <div id="chessBoard" class="chessBoard"></div>
+
+        </div>
+    </form>
+
+    <!--TASK 5 valid string in textarea -->
+    <form class="form">
+        <label class="form_head" for="radioTask5">5) Дан некий textarea, в который пользователь вводит ссылки или ip
+            через запятую. Когда textarea станет неактивным - проверить введены ли ссылки/ip, удалить дичь (то что не
+            ссылки и не ip), и вывести их отсортированным по алфавиту списком ссылок (Пользователю http:// и https://
+            не показывать, при клике на ссылку открывается новое окно).</label>
+        <input class="form_head_input" type="radio" id="radioTask5">
+        <div class="form_wrapper">
+            <textarea class="textarea" rows="3" placeholder="Enter you adress"></textarea>
+        </div>
+    </form>
+
+
+
 
 </section>
 <script src="main.js"></script>

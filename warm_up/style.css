@@ -27,6 +27,7 @@ header {
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 10px;
  }
 
@@ -43,7 +44,9 @@ header {
 /*option intut in zero for visible in click*/
 .form_head_input:checked + .form_wrapper{
   display: block;
+
 }
+/*еще не понятно почему слетают стили*/
 .form_wrapper{
   display: none;
 }
@@ -54,6 +57,22 @@ header {
 position: absolute;
 }
 
+/*chess board*/
+
+.black_cell{
+  background: #2b2b2b;
+  width: 20px;
+  height: 20px;
+}
+.white_cell{
+  background: antiquewhite;
+  width: 20px;
+  height: 20px;
+}
+.chessBoard{
+  display: flex;
+  flex-wrap: wrap;
+}
 .button{
   color: white;
   width: 120px;
@@ -66,6 +85,7 @@ position: absolute;
 .button:hover{
   background: red;
 }
+
 
 
 
